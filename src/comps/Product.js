@@ -9,11 +9,12 @@ function Product() {
         <div className="product-text-container">
           <h2>We can give you our best user experience to your system</h2>
           <p>
-            Alderaan? I'm not going to Alderaan. I've got to go home. It's late,
-            I'm in for it as it is. The Force is strong with this one. I have
-            you now. As you wish. I call it luck. I want to come with you to
-            Alderaan. There's nothing for me here now. I want to learn the ways
-            of the Force and be a Jedi, like my father before me.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
           </p>
         </div>
         <div>
@@ -24,11 +25,12 @@ function Product() {
         <div className="product-text-container">
           <h2>We can give you our best user experience to your system</h2>
           <p>
-            Kid, I've flown from one side of this galaxy to the other. I've seen
-            a lot of strange stuff, but I've never seen anything to make me
-            believe there's one all-powerful Force controlling everything.
-            There's no mystical energy field that controls my destiny. It's all
-            a lot of simple tricks and nonsense. He is here.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
           </p>
         </div>
         <div>
