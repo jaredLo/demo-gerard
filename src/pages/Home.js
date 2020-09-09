@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "../assets/2-banner/banner.png";
 import Product from "../comps/Product";
+import Testimonial from "../comps/Testimonial";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <img src={banner} alt="" />
       </div>
       <Product />
+      <Testimonial />
     </div>
   );
 }
