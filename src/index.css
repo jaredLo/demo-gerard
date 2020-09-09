@@ -153,15 +153,15 @@ nav a {
 .testimonial {
   margin-top: 5%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .testimonial-top {
   width: 70vw;
   font-size: 1vw;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   width: 70vw;
 }
@@ -171,4 +171,24 @@ nav a {
   border-radius: 100%;
   padding: 1.5%;
   width: 3vw;
+}
+
+.testimonial-bot {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background: yellow;
+}
+
+.test {
+  display: inline-flexbox;
+}
+
+.tbox {
+  font-size: 1vw;
+  background: white;
+  margin: 3vh;
+  padding: 2vh;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px rgb(207, 207, 207);
 }

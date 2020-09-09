@@ -1,8 +1,7 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import arrow from "../assets/7-icons/arrow-right.svg";
-import Carousell from "./Carousel";
-import Simple from "./Carousel";
+import Car from "./Carousel";
 
 function Testimonial() {
   const responsive = {
@@ -28,7 +27,7 @@ function Testimonial() {
         <h1>What other people say about our service</h1>
         <img className="arrow-right" src={arrow} alt="" />
       </div>
-      <Simple />
+      <Car />
     </div>
   );
 }
