@@ -158,15 +158,17 @@ nav a {
 }
 
 .testimonial-top {
+  width: 70vw;
+  font-size: 1vw;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background: green;
   width: 70vw;
 }
 
 .arrow-right {
   background: rgb(223, 223, 223);
   border-radius: 100%;
-  padding: 15px;
+  padding: 1.5%;
+  width: 3vw;
 }
