@@ -68,36 +68,37 @@ nav a {
 
 .banner {
   width: 100%;
+  height: 100%;
   display: flex;
-  height: 71vh;
+  padding-bottom: 10%;
   background-color: #252584;
-  background-position: top 100px left -60px, top 100px right -350px;
-  background-size: 680px;
+  background-position: top 0 left -8%, top 5% right -35%;
+  background-size: 37%;
   background-repeat: no-repeat;
   background-image: url(./assets/2-banner/banner-rounded-001.svg),
     url(./assets/2-banner/banner-rounded-002.svg);
 }
 
 .banner-text-container {
-  margin-top: 10vh;
-  margin-left: 15vw;
-  width: 700px;
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 45vw;
   color: white;
 }
 
 .banner-text-container h1 {
-  font-size: 4.6rem;
+  font-size: 4.2vw;
   font-weight: 800;
 }
 .banner-text-container h2 {
   font-weight: 500;
-  font-size: 1.2rem;
-  width: 620px;
+  font-size: 1.2vw;
+  width: 38vw;
 }
 
 .banner img {
   right: 10vw;
-  margin-top: 15vh;
+  margin-top: 5%;
   position: absolute;
   width: 35%;
 }
@@ -123,20 +124,21 @@ nav a {
 }
 
 .product-text-container {
-  min-width: 45%;
+  min-width: 40%;
   width: 25%;
-  margin-top: 13vh;
+  padding-top: 8%;
 }
 
 .product-text-container h2 {
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   font-weight: 800;
 }
 
 .product-text-container p {
-  margin-top: 1rem;
+  font-size: 0.9vw;
+  margin-top: 1vh;
   font-weight: 600;
-  line-height: 1.8rem;
+  line-height: 200%;
   color: #bebed2;
 }
 
