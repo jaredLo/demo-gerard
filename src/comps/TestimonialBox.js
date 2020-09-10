@@ -4,25 +4,21 @@ function TestimonialBox(props) {
   const Test = () => {
     return props.responses.map((each, key) => {
       return (
-        <div className="tbox">
-          <div>
-            <img src="" alt="dp" />
+        <div className="tbox" key={key}>
+          <div className="tbox-top">
+            <img src={each.img} alt="dp" />
             <div className="tbox-text">
               <h2>{each.name}</h2>
-              <p>{each.position}</p>
+              <h3>{each.position}</h3>
             </div>
           </div>
-          <h3 className="testimonial-p">{each.testimonial}</h3>
+          <p className="testimonial-p">{each.testimonial}</p>
         </div>
       );
     });
   };
 
-  return (
-    <div className="test">
-      <Test />
-    </div>
-  );
+  return <Test />;
 }
 
 export default TestimonialBox;

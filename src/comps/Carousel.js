@@ -2,6 +2,9 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TestimonialBox from "./TestimonialBox";
+import person1 from "../assets/4-people/david-campion.jpg";
+import person2 from "../assets/4-people/manuela-faveri.jpg";
+import person3 from "../assets/4-people/vincent-joignie.jpg";
 
 export default function Car() {
   const responsive = {
@@ -16,7 +19,7 @@ export default function Car() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -29,24 +32,16 @@ export default function Car() {
       name: "David Champion",
       position: "CEO of iCloud",
       testimonial:
-        "System is excellent, It has made my system user experience to becone one of the easiest!",
-    },
-    {
-      name: "David Frank van Hord",
-      position: "CEO of Marks.co",
-      testimonial:
-        "I just wanted to share a quick note and let you know that you guys do a really good job.",
-    },
-    {
-      name: "Lucas Bond",
-      position: "BOD of Skyscanner",
-      testimonial:
-        "Now it's always like having a designer right here, I just choose the page, make the changes anytime I want.",
+        '"System is excellent, It has made my system user experience to becone one of the easiest!"',
+      img: person1,
     },
   ];
 
   return (
     <Carousel responsive={responsive} className="testimonial-bot">
+      <TestimonialBox responses={responses} />
+      <TestimonialBox responses={responses} />
+      <TestimonialBox responses={responses} />
       <TestimonialBox responses={responses} />
     </Carousel>
   );

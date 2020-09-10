@@ -175,20 +175,28 @@ nav a {
 
 .testimonial-bot {
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  background: yellow;
-}
-
-.test {
-  display: inline-flexbox;
 }
 
 .tbox {
-  font-size: 1vw;
+  font-size: 0.7vw;
   background: white;
-  margin: 3vh;
-  padding: 2vh;
+  margin: 20px;
+  padding: 20px;
   border-radius: 7px;
   box-shadow: 5px 5px 10px rgb(207, 207, 207);
+}
+
+.tbox-top {
+  display: flex;
+  align-items: center;
+}
+
+.tbox img {
+  width: 5vw;
+  border-radius: 100%;
+  margin-right: 5%;
+}
+
+div.react-multi-carousel-list {
+  padding: 0;
 }
