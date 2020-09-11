@@ -1,33 +1,27 @@
-import React, { Component } from "react";
-import GoogleMapReact from "google-map-react";
+import React from "react";
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const containerStyle = {
+  marginTop: " 5%",
+  marginLeft: "51.5%",
+  height: "60vh",
+  width: "35vw",
+};
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33,
-    },
-    zoom: 11,
-  };
+const center = {
+  lat: 3.079881,
+  lng: 101.670285,
+};
 
-  render() {
-    return (
-      <div className="maps">
-        <GoogleMapReact
-          bootstrapURLKeys={{
-            key: "AIzaSyDsP-g9qU2nPV4h5ab3YhAGfLCEQEdv65I",
-            language: "en",
-          }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+function MyComponent() {
+  return (
+    <LoadScript googleMapsApiKey="AIzaSyDsP-g9qU2nPV4h5ab3YhAGfLCEQEdv65I">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
+        {/* Child components, such as markers, info windows, etc. */}
+        <></>
+      </GoogleMap>
+    </LoadScript>
+  );
 }
 
-export default SimpleMap;
+export default React.memo(MyComponent);

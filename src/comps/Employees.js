@@ -54,7 +54,7 @@ function Employees() {
           <h2>Our important people is listed here</h2>
         </div>
         <div className="top-right">
-          <button onClick={() => console.log(employees)}>Edit</button>
+          <button>Edit</button>
           <button>Add</button>
         </div>
       </div>
