@@ -8,8 +8,8 @@ function TestimonialBox(props) {
           <div className="tbox-top">
             <img src={each.img} alt="dp" />
             <div className="tbox-text">
-              <h2>{each.name}</h2>
-              <h3>{each.position}</h3>
+              <h3>{each.name}</h3>
+              <h4>{each.position}</h4>
             </div>
           </div>
           <p className="testimonial-p">{each.testimonial}</p>

@@ -1,8 +1,8 @@
 import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import arrow from "../assets/7-icons/arrow-right.svg";
-import Car from "./Carousel";
 import heart from "../assets/7-icons/heart.svg";
+import CarouselMain from "./containers/Carousel";
 
 function Testimonial() {
   return (
@@ -10,12 +10,12 @@ function Testimonial() {
       <div className="testimonial-top">
         <div className="top-left">
           <img src={heart} alt="" />
-          <h1>What other people say about our service</h1>
+          <h2>What other people say about our service</h2>
         </div>
 
         <img className="arrow-right" src={arrow} alt="" />
       </div>
-      <Car />
+      <CarouselMain />
     </div>
   );
 }

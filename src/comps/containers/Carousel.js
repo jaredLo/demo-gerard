@@ -2,11 +2,9 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TestimonialBox from "./TestimonialBox";
-import person1 from "../assets/4-people/david-campion.jpg";
-import person2 from "../assets/4-people/manuela-faveri.jpg";
-import person3 from "../assets/4-people/vincent-joignie.jpg";
+import person1 from "../../assets/4-people/david-campion.jpg";
 
-export default function Car() {
+export default function CarouselMain() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
