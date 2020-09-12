@@ -8,6 +8,7 @@ import picture4 from "../assets/4-people/bob-shefley.jpg";
 import picture5 from "../assets/4-people/romane-regad.jpg";
 import picture6 from "../assets/4-people/tania-ferreira.jpg";
 import garbage from "../assets/7-icons/garbage.svg";
+import AddBox from "./containers/AddBox";
 
 function Employees() {
   const [isEdit, setIsEdit] = useState(false);
@@ -57,6 +58,7 @@ function Employees() {
   ]);
 
   const [selected, setSelected] = useState([]);
+  const [add, setAdd] = useState(false);
 
   const DeleteProducts = () => {
     const filteredProducts = list.filter((e) => !selected.includes(e));
@@ -71,8 +73,8 @@ function Employees() {
         </div>
         <div className="top-right">
           <li onClick={() => setIsEdit(false)}>Cancel</li>
-          <div className="garbage">
-            <img src={garbage} alt="garbage" onClick={DeleteProducts} />
+          <div className="garbage" onClick={DeleteProducts}>
+            <img src={garbage} alt="garbage" />
           </div>
         </div>
       </div>
@@ -89,13 +91,14 @@ function Employees() {
     </div>
   ) : (
     <div className="employees-container">
+      {add && <AddBox add={add} setAdd={setAdd} />}
       <div className="employees-top">
         <div className="top-left">
           <h2>Our important people is listed here</h2>
         </div>
         <div className="top-right">
           <li onClick={() => setIsEdit(true)}>Edit</li>
-          <button>Add</button>
+          <button onClick={() => setAdd(true)}>Add</button>
         </div>
       </div>
       <div>
