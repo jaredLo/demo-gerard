@@ -7,9 +7,11 @@ import picture3 from "../assets/4-people/sabrina-rachel.jpg";
 import picture4 from "../assets/4-people/bob-shefley.jpg";
 import picture5 from "../assets/4-people/romane-regad.jpg";
 import picture6 from "../assets/4-people/tania-ferreira.jpg";
+import garbage from "../assets/7-icons/garbage.svg";
 
 function Employees() {
-  const [employees, setEmployees] = useState([
+  const [isEdit, setIsEdit] = useState(false);
+  const employees = [
     {
       name: "Frank Ltarnam",
       position: "CEO",
@@ -45,21 +47,51 @@ function Employees() {
       position: "Business Analyst",
       img: picture6,
     },
-  ]);
+  ];
+  const [list, updateList] = useState(employees);
 
-  return (
+  return isEdit ? (
     <div className="employees-container">
       <div className="employees-top">
         <div className="top-left">
           <h2>Our important people is listed here</h2>
         </div>
         <div className="top-right">
-          <button>Edit</button>
+          <li onClick={() => setIsEdit(false)}>Cancel</li>
+          <div className="garbage">
+            <img src={garbage} alt="garbage" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <EmployeeBox
+          employees={employees}
+          isEdit={isEdit}
+          setIsEdit={setIsEdit}
+          list={list}
+          updateList={updateList}
+        />
+      </div>
+    </div>
+  ) : (
+    <div className="employees-container">
+      <div className="employees-top">
+        <div className="top-left">
+          <h2>Our important people is listed here</h2>
+        </div>
+        <div className="top-right">
+          <li onClick={() => setIsEdit(true)}>Edit</li>
           <button>Add</button>
         </div>
       </div>
-      <div className="employees-content">
-        <EmployeeBox employees={employees} setEmployees={setEmployees} />
+      <div>
+        <EmployeeBox
+          employees={employees}
+          isEdit={isEdit}
+          setIsEdit={setIsEdit}
+          list={list}
+          updateList={updateList}
+        />
       </div>
     </div>
   );
