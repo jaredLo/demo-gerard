@@ -17,43 +17,43 @@ function Employees() {
       name: "Frank Ltarnam",
       position: "CEO",
       img: picture1,
-      key: "employee0",
+      key: 0,
     },
     {
       name: "Bob Shefley",
       position: "UI/UX Designer",
       img: picture4,
-      key: "employee1",
+      key: 1,
     },
     {
       name: "Jason Steward",
       position: "Full-stack developer",
       img: picture2,
-      key: "employee2",
+      key: 2,
     },
     {
       name: "Sabrina Rachel",
       position: "Marketing",
       img: picture3,
-      key: "employee3",
+      key: 3,
     },
     {
       name: "Marissa Lawren",
       position: "Customer Support",
       img: picture,
-      key: "employee4",
+      key: 4,
     },
     {
       name: "Romane Regad",
       position: "Jr UI/UX Designer",
       img: picture5,
-      key: "employee5",
+      key: 5,
     },
     {
       name: "Tania Ferreira",
       position: "Business Analyst",
       img: picture6,
-      key: "employee6",
+      key: 6,
     },
   ]);
 
@@ -91,7 +91,9 @@ function Employees() {
     </div>
   ) : (
     <div className="employees-container">
-      {add && <AddBox add={add} setAdd={setAdd} />}
+      {add && (
+        <AddBox add={add} setAdd={setAdd} list={list} updateList={updateList} />
+      )}
       <div className="employees-top">
         <div className="top-left">
           <h2>Our important people is listed here</h2>
