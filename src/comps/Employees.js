@@ -16,36 +16,43 @@ function Employees() {
       name: "Frank Ltarnam",
       position: "CEO",
       img: picture1,
+      key: "employee0",
     },
     {
       name: "Bob Shefley",
       position: "UI/UX Designer",
       img: picture4,
+      key: "employee1",
     },
     {
       name: "Jason Steward",
       position: "Full-stack developer",
       img: picture2,
+      key: "employee2",
     },
     {
       name: "Sabrina Rachel",
       position: "Marketing",
       img: picture3,
+      key: "employee3",
     },
     {
       name: "Marissa Lawren",
       position: "Customer Support",
       img: picture,
+      key: "employee4",
     },
     {
       name: "Romane Regad",
       position: "Jr UI/UX Designer",
       img: picture5,
+      key: "employee5",
     },
     {
       name: "Tania Ferreira",
       position: "Business Analyst",
       img: picture6,
+      key: "employee6",
     },
   ]);
 

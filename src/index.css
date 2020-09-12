@@ -286,6 +286,22 @@ button.react-multiple-carousel__arrow {
 }
 
 .circle {
+  border-style: solid;
+  /* border-color: rgb(46, 46, 160); */
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+  width: 20px;
+  height: 20px;
+  margin: 1%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circleMarked {
+  border-style: solid;
+  /* border-color: rgb(46, 46, 160); */
+  border-color: rgb(46, 46, 160);
+  border-width: 1px;
   background: rgb(46, 46, 160);
   width: 20px;
   height: 20px;

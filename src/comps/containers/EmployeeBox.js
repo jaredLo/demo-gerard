@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 function EmployeeBox(props) {
   const { list } = props;
   const { isEdit } = props;
   const { selected, setSelected } = props;
+  const [marked, setMarked] = useState([]);
 
   return isEdit ? (
     <div className="employees-content">
-      {list.map((item, key) => {
+      {list.map((item) => {
         return (
-          <div className="employee-box" key={key}>
+          <div className="employee-box" key={item.key}>
             <div
               name={item.name}
-              className="circle"
+              className={marked.includes(item.key) ? "circleMarked" : "circle"}
               onClick={() => {
                 setSelected((selected) => [...selected, item]);
+                setMarked((marked) => [...marked, item.key]);
+                console.log(marked);
               }}
             ></div>
             <img src={item.img} alt="alt" />
