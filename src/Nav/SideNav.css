@@ -1,0 +1,44 @@
+.side-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: #252584;
+  background-position: top 45vh left -40vw;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/2-banner/banner-rounded-001.svg);
+}
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65%;
+  padding-left: 10vw;
+  font-size: 1.4rem;
+}
+
+.side-nav img {
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+.side-nav a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.side-nav-cancel {
+  font-size: 50px;
+  padding-right: 5vw;
+
+  color: white;
+}

@@ -7,12 +7,22 @@ import Pricing from "./pages/Pricing.js";
 import Careers from "./pages/Careers.js";
 
 import Nav from "./Nav.js";
+import SideNav from "./Nav/SideNav.js";
 
 const App = () => {
+  const [isDrawerOpen, setDrawerOpen] = React.useState(false);
+
+  let sideNav;
+
+  if (isDrawerOpen) {
+    sideNav = <SideNav setDrawerOpen={setDrawerOpen} />;
+  }
+
   return (
     <Router>
       <div>
-        <Nav />
+        <Nav setDrawerOpen={setDrawerOpen} />
+        {sideNav}
         <Switch>
           <Route path="/services">
             <Services />

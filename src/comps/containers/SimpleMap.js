@@ -13,15 +13,16 @@ const center = {
   lng: 101.670285,
 };
 
-function MyComponent() {
+function SimpleMap() {
   return (
     <LoadScript googleMapsApiKey="AIzaSyDsP-g9qU2nPV4h5ab3YhAGfLCEQEdv65I">
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
-        {/* Child components, such as markers, info windows, etc. */}
-        <></>
-      </GoogleMap>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={18}
+      ></GoogleMap>
     </LoadScript>
   );
 }
 
-export default React.memo(MyComponent);
+export default React.memo(SimpleMap);

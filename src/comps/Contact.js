@@ -10,7 +10,9 @@ function Contact() {
       </div>
       <div className="contact-content">
         <Form />
-        <SimpleMap />
+        <div className="maps">
+          <SimpleMap />
+        </div>
       </div>
     </div>
   );

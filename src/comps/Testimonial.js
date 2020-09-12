@@ -9,7 +9,9 @@ function Testimonial() {
     <div className="testimonial">
       <div className="testimonial-top">
         <div className="top-left">
-          <img src={heart} alt="" />
+          <div className="heart">
+            <img src={heart} alt="love" />
+          </div>
           <h2>What other people say about our service</h2>
         </div>
 
