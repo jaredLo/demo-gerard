@@ -9,6 +9,7 @@ import picture5 from "../assets/4-people/romane-regad.jpg";
 import picture6 from "../assets/4-people/tania-ferreira.jpg";
 import garbage from "../assets/7-icons/garbage.svg";
 import AddBox from "./containers/AddBox";
+import heart from "../assets/7-icons/heart.svg";
 
 function Employees() {
   const [isEdit, setIsEdit] = useState(false);
@@ -69,6 +70,9 @@ function Employees() {
     <div className="employees-container">
       <div className="employees-top">
         <div className="top-left">
+          <div className="heart">
+            <img src={heart} alt="love" />
+          </div>
           <h2>Our important people is listed here</h2>
         </div>
         <div className="top-right">
@@ -95,7 +99,10 @@ function Employees() {
         <AddBox add={add} setAdd={setAdd} list={list} updateList={updateList} />
       )}
       <div className="employees-top">
-        <div className="top-left">
+        <div className="employee-top-left">
+          <div className="heart">
+            <img src={heart} alt="love" />
+          </div>
           <h2>Our important people is listed here</h2>
         </div>
         <div className="top-right">
