@@ -1,5 +1,6 @@
 import React from "react";
 import user from "../../assets/7-icons/user.svg";
+import pencil from "../../assets/7-icons/pencil.svg";
 
 function AddBox({ add, setAdd }) {
   const onClickHide = (e) => {
@@ -13,9 +14,13 @@ function AddBox({ add, setAdd }) {
       <form className="add-container">
         <div className="addbox-top">
           <label>Add People</label>
-          <label>X</label>
+          <span className="times">&times;</span>
         </div>
-        <img src={user} alt="upload" />
+        <div className="addbox-dp">
+          <img className="user" src={user} alt="upload" />
+        </div>
+        <img className="pencil" src={pencil} alt="pencil" />
+
         <div className="add-input">
           <label>Name</label>
           <input type="text" placeholder="Enter name" />
