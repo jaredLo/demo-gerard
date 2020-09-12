@@ -11,7 +11,7 @@ import garbage from "../assets/7-icons/garbage.svg";
 
 function Employees() {
   const [isEdit, setIsEdit] = useState(false);
-  const employees = [
+  const [list, updateList] = useState([
     {
       name: "Frank Ltarnam",
       position: "CEO",
@@ -47,8 +47,14 @@ function Employees() {
       position: "Business Analyst",
       img: picture6,
     },
-  ];
-  const [list, updateList] = useState(employees);
+  ]);
+
+  const [selected, setSelected] = useState([]);
+
+  const DeleteProducts = () => {
+    const filteredProducts = list.filter((e) => !selected.includes(e));
+    return updateList(filteredProducts);
+  };
 
   return isEdit ? (
     <div className="employees-container">
@@ -59,17 +65,18 @@ function Employees() {
         <div className="top-right">
           <li onClick={() => setIsEdit(false)}>Cancel</li>
           <div className="garbage">
-            <img src={garbage} alt="garbage" />
+            <img src={garbage} alt="garbage" onClick={DeleteProducts} />
           </div>
         </div>
       </div>
       <div>
         <EmployeeBox
-          employees={employees}
           isEdit={isEdit}
           setIsEdit={setIsEdit}
           list={list}
           updateList={updateList}
+          selected={selected}
+          setSelected={setSelected}
         />
       </div>
     </div>
@@ -86,11 +93,12 @@ function Employees() {
       </div>
       <div>
         <EmployeeBox
-          employees={employees}
           isEdit={isEdit}
           setIsEdit={setIsEdit}
           list={list}
           updateList={updateList}
+          selected={selected}
+          setSelected={setSelected}
         />
       </div>
     </div>

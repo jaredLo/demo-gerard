@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 function EmployeeBox(props) {
-  const { list, updateList } = props;
-  const { isEdit, setIsEdit } = props;
+  const { list } = props;
+  const { isEdit } = props;
+  const { selected, setSelected } = props;
 
-  const handleRemoveItem = (e) => {
-    const name = e.target.getAttribute("name");
-    updateList(list.filter((item) => item.name !== name));
-  };
-
-  return (
+  return isEdit ? (
     <div className="employees-content">
       {list.map((item, key) => {
         return (
@@ -17,8 +13,22 @@ function EmployeeBox(props) {
             <div
               name={item.name}
               className="circle"
-              onClick={handleRemoveItem}
+              onClick={() => {
+                setSelected((selected) => [...selected, item]);
+              }}
             ></div>
+            <img src={item.img} alt="alt" />
+            <h3>{item.name}</h3>
+            <h4>{item.position}</h4>
+          </div>
+        );
+      })}
+    </div>
+  ) : (
+    <div className="employees-content">
+      {list.map((item, key) => {
+        return (
+          <div className="employee-box" key={key}>
             <img src={item.img} alt="alt" />
             <h3>{item.name}</h3>
             <h4>{item.position}</h4>
