@@ -14,8 +14,6 @@ function Testimonial() {
           </div>
           <h2>What other people say about our service</h2>
         </div>
-
-        <img className="arrow-right" src={arrow} alt="" />
       </div>
       <CarouselMain />
     </div>

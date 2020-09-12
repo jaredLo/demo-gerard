@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import userPic from "../../assets/7-icons/user.svg";
 import pencil from "../../assets/7-icons/pencil.svg";
-// import UploadPicture from "./UploadPicture";
 
 function AddBox(props) {
   const { list, updateList } = props;

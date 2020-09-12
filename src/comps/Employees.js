@@ -19,42 +19,56 @@ function Employees() {
       name: "Frank Ltarnam",
       position: "CEO",
       img: picture1,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 0,
     },
     {
       name: "Bob Shefley",
       position: "UI/UX Designer",
       img: picture4,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 1,
     },
     {
       name: "Jason Steward",
       position: "Full-stack developer",
       img: picture2,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 2,
     },
     {
       name: "Sabrina Rachel",
       position: "Marketing",
       img: picture3,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 3,
     },
     {
       name: "Marissa Lawren",
       position: "Customer Support",
       img: picture,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 4,
     },
     {
       name: "Romane Regad",
       position: "Jr UI/UX Designer",
       img: picture5,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 5,
     },
     {
       name: "Tania Ferreira",
       position: "Business Analyst",
       img: picture6,
+      desc:
+        "The ability to destroy a planet is insignificant next to the power of the Force. Dantooine. They're on Dantooine. I want to come with you to Alderaan.",
       key: 6,
     },
   ]);
