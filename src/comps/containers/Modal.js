@@ -17,8 +17,8 @@ function Modal({ goModal, modalItem }) {
           <h3>{modalItem.position}</h3>
           <p>{modalItem.desc}</p>
         </div>
-        <div className="modal-x" onClick={() => goModal(false)}>
-          X
+        <div className="modal-cancel" onClick={() => goModal(false)}>
+          &times;
         </div>
       </div>
     </div>

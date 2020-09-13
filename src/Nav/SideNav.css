@@ -39,6 +39,6 @@
 .side-nav-cancel {
   font-size: 50px;
   padding-right: 5vw;
-
+  cursor: pointer;
   color: white;
 }
