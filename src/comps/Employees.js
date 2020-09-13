@@ -9,7 +9,6 @@ import picture5 from "../assets/4-people/romane-regad.jpg";
 import picture6 from "../assets/4-people/tania-ferreira.jpg";
 import garbage from "../assets/7-icons/garbage.svg";
 import AddBox from "./containers/AddBox";
-import heart from "../assets/7-icons/heart.svg";
 import smile from "../assets/7-icons/happy-face.svg";
 
 function Employees() {

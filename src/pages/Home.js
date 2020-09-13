@@ -18,7 +18,8 @@ function Home() {
             resources. We at EasyWork has the solution.
           </p>
         </div>
-        <img src={banner} alt="" />
+
+        <img className="banner-image" src={banner} alt="" />
       </div>
       <Product />
       <Testimonial />

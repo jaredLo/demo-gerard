@@ -1,7 +1,7 @@
 import React from "react";
 
 function Pricing() {
-  return <div>Pricing</div>;
+  return <h1 style={{ textAlign: "center", paddingTop: "50px" }}>Pricing</h1>;
 }
 
 export default Pricing;
