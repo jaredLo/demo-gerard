@@ -18,8 +18,7 @@ const center = {
 
 function SimpleMap() {
   return ( <
-    LoadScript googleMapsApiKey = "API_KEY_HERE" >
-    <
+    LoadScript googleMapsApiKey = "AIzaSyDsP-g9qU2nPV4h5ab3YhAGfLCEQEdv65I" > <
     GoogleMap mapContainerStyle = {
       containerStyle
     }
@@ -30,8 +29,7 @@ function SimpleMap() {
       18
     } >
     <
-    /GoogleMap> < /
-    LoadScript >
+    /GoogleMap> </LoadScript >
   );
 }
 

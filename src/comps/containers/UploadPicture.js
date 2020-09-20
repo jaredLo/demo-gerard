@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, {
+  useState
+} from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+const Button = styled.button `
   padding: 50px;
   border-style: dashed;
   border-radius: 2px;
@@ -12,7 +14,9 @@ const Button = styled.button`
   width: 123px;
 `;
 
-const UploadButton = ({ props }) => {
+const UploadButton = ({
+  props
+}) => {
   const [file, setFile] = React.useState(null);
   const hiddenFileInput = React.useRef(null);
   const [brand, setBrand] = useState("");
@@ -27,7 +31,10 @@ const UploadButton = ({ props }) => {
       const fileUploaded = URL.createObjectURL(event.target.files[0]);
       const test = event.target.files[0];
       setFile(fileUploaded);
-      setBrand((prev) => ({ ...prev, file: test }));
+      setBrand((prev) => ({
+        ...prev,
+        file: test
+      }));
     }
     return null;
   };
@@ -36,38 +43,53 @@ const UploadButton = ({ props }) => {
     if (!file) {
       return null;
     } else
-      return (
-        <>
-          <img
-            className="imgGallery"
-            src={file}
-            alt=""
-            onClick={() => {
-              setFile("");
-            }}
-          />
-        </>
+      return ( <
+        >
+        <
+        img className = "imgGallery"
+        src = {
+          file
+        }
+        alt = ""
+        onClick = {
+          () => {
+            setFile("");
+          }
+        }
+        /> <
+        />
       );
   };
 
   const ReplacedImage = () => {
     if (!file) {
-      return (
-        <div className="uploadButton">
-          <Button onClick={handleClick}></Button>
-          <input
-            type="file"
-            ref={hiddenFileInput}
-            onChange={handleChange}
-            style={{ display: "none" }}
-            multiple
-          />
-        </div>
+      return ( <
+        div className = "uploadButton" >
+        <
+        Button onClick = {
+          handleClick
+        } > < /Button> <
+        input type = "file"
+        ref = {
+          hiddenFileInput
+        }
+        onChange = {
+          handleChange
+        }
+        style = {
+          {
+            display: "none"
+          }
+        }
+        multiple /
+        >
+        <
+        /div>
       );
-    } else return <Image />;
+    } else return <Image / > ;
   };
 
-  return <ReplacedImage />;
+  return <ReplacedImage / > ;
 };
 
 export default UploadButton;
