@@ -1,6 +1,6 @@
 Hello, this is the website I've made using React.
 
-These are the things that I've done in this assessment:
+These are the things:
 
 1. 99% similarity to mockup
 2. Basic animations
