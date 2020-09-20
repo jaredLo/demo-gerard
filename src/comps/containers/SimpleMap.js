@@ -1,5 +1,8 @@
 import React from "react";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  LoadScript
+} from "@react-google-maps/api";
 
 const containerStyle = {
   marginTop: " 5%",
@@ -14,14 +17,21 @@ const center = {
 };
 
 function SimpleMap() {
-  return (
-    <LoadScript googleMapsApiKey="AIzaSyDsP-g9qU2nPV4h5ab3YhAGfLCEQEdv65I">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={18}
-      ></GoogleMap>
-    </LoadScript>
+  return ( <
+    LoadScript googleMapsApiKey = "API_KEY_HERE" >
+    <
+    GoogleMap mapContainerStyle = {
+      containerStyle
+    }
+    center = {
+      center
+    }
+    zoom = {
+      18
+    } >
+    <
+    /GoogleMap> < /
+    LoadScript >
   );
 }
 

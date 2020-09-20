@@ -8,19 +8,29 @@ const SideNav = ({ setDrawerOpen }) => (
     <ul>
       <img className="sidenav-logo" src={logo} alt="logo" />
       <li>
-        <Link to="/">Home</Link>
+        <Link onClick={() => setDrawerOpen(false)} to="/">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="/about">About Us</Link>
+        <Link onClick={() => setDrawerOpen(false)} to="/about">
+          About Us
+        </Link>
       </li>
       <li>
-        <Link to="/services">Services</Link>
+        <Link onClick={() => setDrawerOpen(false)} to="/services">
+          Services
+        </Link>
       </li>
       <li>
-        <Link to="/pricing">Pricing</Link>
+        <Link onClick={() => setDrawerOpen(false)} to="/pricing">
+          Pricing
+        </Link>
       </li>
       <li>
-        <Link to="/careers">Careers</Link>
+        <Link onClick={() => setDrawerOpen(false)} to="/careers">
+          Careers
+        </Link>
       </li>
     </ul>
     <div className="side-nav-cancel" onClick={() => setDrawerOpen(false)}>
