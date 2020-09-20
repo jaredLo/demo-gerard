@@ -1,4 +1,4 @@
-Hello, this is the website I've made based on the mockup sent to from Finology.
+Hello, this is the website I've made using React.
 
 These are the things that I've done in this assessment:
 
